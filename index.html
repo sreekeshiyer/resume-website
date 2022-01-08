@@ -17,14 +17,14 @@
     <body class="bg-[#f4f4f4]">
         <div class="flex items-center justify-center">
             <div
-                class="bg-white min-w-[1200px] w-[1200px] shadow-lg my-12 p-16"
+                class="bg-white max-w-[1200px] shadow-lg my-12 p-16 lg:w-full lg:p-10"
             >
                 <header
                     class="flex justify-between items-center border-b-4 border-gray-200 mb-4 pb-4"
                 >
-                    <div class="flex justify-between items-center">
+                    <div class="flex w-full justify-between items-center">
                         <div>
-                            <h1 class="text-5xl font-bold mb-2">
+                            <h1 class="text-5xl font-bold mb-2 lg:text-3xl">
                                 Sreekesh Iyer
                             </h1>
                             <p class="text-gray-700 text-[0.9rem]">
@@ -37,14 +37,16 @@
                         <img
                             src="./images/Profile_Image.jpg"
                             alt="pikachu"
-                            class="w-[100px] h-[100px] overflow-hidden rounded-full"
+                            class="w-[100px] h-[90px] rounded-full lg:w-[75] lg:h-[65] sm:hidden"
                         />
                     </div>
                 </header>
-                <div class="w-full flex justify-start items-start gap-6">
-                    <div class="w-1/2 flex flex-col py-2 my-5">
+                <div
+                    class="w-full flex gap-6 lg:flex-col lg:justify-center lg:items-center lg:gap-0"
+                >
+                    <div class="w-1/2 flex flex-col py-2 my-5 lg:w-full">
                         <div
-                            class="grid grid-cols-3 gap-4 w-full items-start px-4 text-[0.9rem] text-gray-700 border-b-2 border-gray-200"
+                            class="grid grid-cols-3 gap-4 w-full items-start px-4 text-[0.9rem] text-gray-700 border-b-2 border-gray-200 sc:grid-cols-2 sc:gap-1 xs:grid-cols-1 xs:gap-0"
                         >
                             <div
                                 class="my-1 flex gap-2 items-center justify-center"
@@ -56,13 +58,21 @@
                                 class="my-1 flex gap-2 items-center justify-center"
                             >
                                 <i class="fab fa-github"></i>
-                                <a href="#">@sreekeshiyer</a>
+                                <a
+                                    href="https://github.com/sreekeshiyer"
+                                    target="_blank"
+                                    >@sreekeshiyer</a
+                                >
                             </div>
                             <div
                                 class="my-1 flex gap-2 items-center justify-center"
                             >
                                 <i class="fab fa-linkedin"></i>
-                                <a href="#">@sreekesh-iyer</a>
+                                <a
+                                    href="https://www.linkedin.com/in/sreekesh-iyer/"
+                                    target="_blank"
+                                    >@sreekesh-iyer</a
+                                >
                             </div>
                             <div
                                 class="my-1 flex gap-2 items-center justify-center"
@@ -74,13 +84,21 @@
                                 class="my-1 flex gap-2 items-center justify-center"
                             >
                                 <i class="fab fa-hackerrank"></i>
-                                <a href="#">@sreekeshiyer</a>
+                                <a
+                                    href="https://www.hackerrank.com/SreekeshIyer"
+                                    target="_blank"
+                                    >@sreekeshiyer</a
+                                >
                             </div>
                             <div
                                 class="my-1 flex gap-2 items-center justify-center"
                             >
                                 <i class="fab fa-twitter"></i>
-                                <a href="#">@sreekeshiyer</a>
+                                <a
+                                    href="https://twitter.com/sreekeshiyer"
+                                    target="_blank"
+                                    >@sreekeshiyer</a
+                                >
                             </div>
                         </div>
 
@@ -89,10 +107,12 @@
                             id="about"
                             class="my-4 py-2 text-gray-700 border-b-2 border-gray-200"
                         >
-                            <h1 class="text-2xl uppercase font-semibold my-2">
+                            <h1
+                                class="text-2xl uppercase font-semibold my-2 lg:text-center lg:my-4"
+                            >
                                 About
                             </h1>
-                            <p>
+                            <p class="lg:text-center">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit. Reprehenderit impedit
                                 explicabo, molestias itaque molestiae rerum
@@ -111,7 +131,7 @@
                             class="my-4 py-2 text-gray-700 border-b-2 border-gray-200"
                         >
                             <h1
-                                class="text-[1.7rem] uppercase font-semibold my-2"
+                                class="text-[1.7rem] uppercase font-semibold my-2 lg:text-center lg:my-4"
                             >
                                 Experience
                             </h1>
@@ -168,7 +188,7 @@
                             class="my-4 py-2 text-gray-700 border-b-2 border-gray-200"
                         >
                             <h1
-                                class="text-[1.7rem] uppercase font-semibold my-2"
+                                class="text-[1.7rem] uppercase font-semibold my-2 lg:text-center lg:my-4"
                             >
                                 Education
                             </h1>
@@ -206,7 +226,7 @@
                     </div>
 
                     <!-- Second Half -->
-                    <div class="w-1/2 flex flex-col items-start justify-start">
+                    <div class="w-1/2 flex flex-col lg:w-full">
                         <!-- Projects -->
 
                         <div
@@ -214,7 +234,7 @@
                             class="py-2 text-gray-700 border-b-2 border-gray-200"
                         >
                             <h1
-                                class="text-[1.7rem] uppercase font-semibold my-2"
+                                class="text-[1.7rem] uppercase font-semibold my-2 lg:text-center"
                             >
                                 Projects
                             </h1>
@@ -231,7 +251,7 @@
 
                                     <a
                                         href="#"
-                                        class="inline-flex justify-center items-center gap-2 h-7 p-3 w-20 text-blue-100 text-[0.9rem] transition-colors duration-150 bg-blue-700 rounded-lg focus:shadow-outline hover:bg-blue-800"
+                                        class="inline-flex justify-center items-center gap-2 h-7 p-3 w-20 text-blue-100 text-[0.9rem] transition-colors duration-150 bg-blue-700 rounded-lg focus:shadow-outline hover:bg-blue-800 print:hidden"
                                     >
                                         <span>Live</span>
                                         <i class="fas fa-satellite-dish"></i>
@@ -239,7 +259,7 @@
 
                                     <a
                                         href="#"
-                                        class="inline-flex justify-center items-center gap-2 h-7 p-3 w-20 text-blue-100 text-[0.9rem] transition-colors duration-150 bg-blue-700 rounded-lg focus:shadow-outline hover:bg-blue-800"
+                                        class="inline-flex justify-center items-center gap-2 h-7 p-3 w-20 text-blue-100 text-[0.9rem] transition-colors duration-150 bg-blue-700 rounded-lg focus:shadow-outline hover:bg-blue-800 print:hidden"
                                     >
                                         <span>Code</span>
                                         <i class="fab fa-github"></i>
@@ -270,7 +290,7 @@
 
                                     <a
                                         href="#"
-                                        class="inline-flex justify-center items-center gap-2 h-7 p-3 w-20 text-blue-100 text-[0.9rem] transition-colors duration-150 bg-blue-700 rounded-lg focus:shadow-outline hover:bg-blue-800"
+                                        class="inline-flex justify-center items-center gap-2 h-7 p-3 w-20 text-blue-100 text-[0.9rem] transition-colors duration-150 bg-blue-700 rounded-lg focus:shadow-outline hover:bg-blue-800 print:hidden"
                                     >
                                         <span>Live</span>
                                         <i class="fas fa-satellite-dish"></i>
@@ -278,7 +298,7 @@
 
                                     <a
                                         href="#"
-                                        class="inline-flex justify-center items-center gap-2 h-7 p-3 w-20 text-blue-100 text-[0.9rem] transition-colors duration-150 bg-blue-700 rounded-lg focus:shadow-outline hover:bg-blue-800"
+                                        class="inline-flex justify-center items-center gap-2 h-7 p-3 w-20 text-blue-100 text-[0.9rem] transition-colors duration-150 bg-blue-700 rounded-lg focus:shadow-outline hover:bg-blue-800 print:hidden"
                                     >
                                         <span>Code</span>
                                         <i class="fab fa-github"></i>
@@ -305,7 +325,7 @@
 
                                     <a
                                         href="#"
-                                        class="inline-flex justify-center items-center gap-2 h-7 p-3 w-20 text-blue-100 text-[0.9rem] transition-colors duration-150 bg-blue-700 rounded-lg focus:shadow-outline hover:bg-blue-800"
+                                        class="inline-flex justify-center items-center gap-2 h-7 p-3 w-20 text-blue-100 text-[0.9rem] transition-colors duration-150 bg-blue-700 rounded-lg focus:shadow-outline hover:bg-blue-800 print:hidden"
                                     >
                                         <span>Live</span>
                                         <i class="fas fa-satellite-dish"></i>
@@ -313,7 +333,7 @@
 
                                     <a
                                         href="#"
-                                        class="inline-flex justify-center items-center gap-2 h-7 p-3 w-20 text-blue-100 text-[0.9rem] transition-colors duration-150 bg-blue-700 rounded-lg focus:shadow-outline hover:bg-blue-800"
+                                        class="inline-flex justify-center items-center gap-2 h-7 p-3 w-20 text-blue-100 text-[0.9rem] transition-colors duration-150 bg-blue-700 rounded-lg focus:shadow-outline hover:bg-blue-800 print:hidden"
                                     >
                                         <span>Code</span>
                                         <i class="fab fa-github"></i>
@@ -339,7 +359,7 @@
                             class="py-2 w-full text-gray-700 border-b-2 border-gray-200"
                         >
                             <h1
-                                class="text-[1.7rem] uppercase font-semibold my-2"
+                                class="text-[1.7rem] uppercase font-semibold my-2 lg:text-center lg:my-4"
                             >
                                 Achievements
                             </h1>
@@ -359,7 +379,7 @@
                             class="py-2 w-full text-gray-700 border-b-2 border-gray-200"
                         >
                             <h1
-                                class="text-[1.7rem] uppercase font-semibold my-2"
+                                class="text-[1.7rem] uppercase font-semibold my-2 lg:text-center lg:my-4"
                             >
                                 Skills
                             </h1>
@@ -406,10 +426,12 @@
                     </div>
                 </div>
                 <footer>
-                    <p class="w-full text-center text-gray-700 text-[0.9rem]">
+                    <p
+                        class="w-full text-center text-gray-700 text-[0.9rem] lg:mt-4"
+                    >
                         <i class="fas fa-quote-left"></i>
                         Hard work and Consistency can improve your efficiency,
-                        but the adrenaline brings you results.
+                        but adrenaline brings you results.
                         <i class="fas fa-quote-right"></i>
                     </p>
                 </footer>
